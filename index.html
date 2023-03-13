@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Title</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -16,7 +17,7 @@
                 <img alt="user" class="header-buttons__login-btn-icon" src="img/user.svg"/>
                 <span>Войти</span>
             </button>
-            <button class="header-buttons__ad-btn">
+            <button class="header-buttons__add-btn">
                 <span>Новое объявление</span>
                 <img alt="new ad" class="header-buttons__ad-btn-icon" src="img/plus.svg">
             </button>
@@ -29,17 +30,19 @@
         <div class="announcement-heading">
             <h3 class="announcement-heading__title">Доска объявлений</h3>
 
-            <button class="announcement-heading__category-btn">
-                <img alt="categories" class="announcement-heading__category-btn-icon" src="img/categories.svg"/>
-                <span class="announcement-heading__category-btn-text">Все категории</span>
-            </button>
-            <form class="announcement-heading__search-form">
-                <input class="announcement-heading__search-input" placeholder="Поиск по объявлениям" type="text">
-                <button class="announcement-heading__search-btn" type="submit">
-                    <span class="announcement-heading__search-btn-text">Найти</span>
-                    <img alt="search" class="announcement-heading__search-btn-icon" src="img/search.svg">
+            <div class="announcement-heading__form-container">
+                <button class="announcement-heading__category-btn">
+                    <img alt="categories" class="announcement-heading__category-btn-icon" src="img/categories.svg"/>
+                    <span class="announcement-heading__category-btn-text">Все категории</span>
                 </button>
-            </form>
+                <form class="announcement-heading__search-form">
+                    <input class="announcement-heading__search-input" placeholder="Поиск по объявлениям" type="text">
+                    <button class="announcement-heading__search-btn" type="submit">
+                        <span class="announcement-heading__search-btn-text">Найти</span>
+                        <img alt="search" class="announcement-heading__search-btn-icon" src="img/search.svg">
+                    </button>
+                </form>
+            </div>
         </div>
         <h4 class="recommendations-title">
             Рекомендации для вас
