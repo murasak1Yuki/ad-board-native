@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 body {
@@ -67,6 +68,7 @@ body {
 }
 .announcement-heading__title {
   margin-right: 1.5rem;
+  margin-block: 1rem;
   font-weight: 700;
   font-size: 1.9rem;
   line-height: 2rem;
@@ -103,6 +105,9 @@ body {
   border: 0.06rem solid #CBD5E1;
   border-right: none;
 }
+.announcement-heading__search-input::placeholder {
+  font-size: 1rem;
+}
 .announcement-heading__search-input:focus-within {
   outline: none;
 }
@@ -130,7 +135,7 @@ body {
 .ads-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(12.5rem, 1fr));
-  grid-column-gap: 1.5rem;
+  grid-gap: 1.5rem;
   justify-content: center;
   margin-bottom: 3rem;
 }
@@ -139,6 +144,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
+  color: inherit;
 }
 .ad__img {
   width: 100%;
@@ -177,7 +183,6 @@ body {
   line-height: 1.3rem;
 }
 .ad__time {
-  margin-bottom: 2rem;
   color: #64748B;
   font-size: 0.9rem;
   line-height: 1.3rem;
@@ -218,6 +223,9 @@ body {
   }
 }
 @media (max-width: 575.98px) {
+  .announcement-heading {
+    margin-bottom: 3vw;
+  }
   .announcement-heading input::placeholder {
     font-size: 0.8rem;
   }

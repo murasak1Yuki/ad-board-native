@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: inherit;
 }
 
 body {
@@ -70,6 +71,7 @@ body {
 
   &__title {
     margin-right: 1.5rem;
+    margin-block: 1rem;
     font-weight: 700;
     font-size: 1.9rem;
     line-height: 2rem;
@@ -109,6 +111,10 @@ body {
     border-radius: 0.3rem 0 0 0.3rem;
     border: 0.06rem solid #CBD5E1;
     border-right: none;
+
+    &::placeholder {
+      font-size: 1rem;
+    }
   }
 
   &__search-input:focus-within {
@@ -140,7 +146,7 @@ body {
 .ads-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(12.5rem, 1fr));
-  grid-column-gap: 1.5rem;
+  grid-gap: 1.5rem;
   justify-content: center;
   margin-bottom: 3rem;
 }
@@ -149,6 +155,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
+  color: inherit;
 
   &__img {
     width: 100%;
@@ -193,7 +200,6 @@ body {
   }
 
   &__time {
-    margin-bottom: 2rem;
     color: #64748B;
     font-size: 0.9rem;
     line-height: 1.3rem;
@@ -251,6 +257,8 @@ body {
 @media (max-width: 575.98px) {
 
   .announcement-heading {
+    margin-bottom: 3vw;
+
     input::placeholder {
       font-size: 0.8rem;
     }
